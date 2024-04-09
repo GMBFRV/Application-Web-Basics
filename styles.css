@@ -12,8 +12,8 @@
 }
 
     .pizza-item img {
-        width: 100%;
-        height: auto;
+        width: 500px;
+        height: 320px;
     }
 
     .pizza-item h3 {
