@@ -4,92 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyiv Street Pizza</title>
+    <style>
+        .pizza-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pizza-item {
+            flex: 0 0 30%;
+            margin: 20px;
+            text-align: center;
+        }
+
+            .pizza-item img {
+                width: 100%;
+                height: auto;
+            }
+
+            .pizza-item h3 {
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            .pizza-item p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+        .footer {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<header style="background-color: #333333; padding: 20px">
-    <a href="#about" style="color: white; padding: 10px;">ПРО НАС</a>
-    <a href="#contacts" style="color: white; padding: 10px;">КОНТАКТИ</a>
-    <a href="#delivery" style="color: white; padding: 10px;">ДОСТАВКА ТА ОПЛАТА</a>
-    <a href="#rates" style="color: white; padding: 10px;">ВІДГУКИ</a>
-    <a href="#news" style="color: white; padding: 10px;">НОВИНИ ТА АКЦІЇ</a>
-    <a href="#login" style="color: white; padding: 10px;">УВІЙТИ</a>
-</header>
-<main>
-    <div style="text-align: center;">
-        <img src="images/2.jpg" style="margin-top: 50px;" width="500px" height="auto" alt="Акція">
-        <h3 align="center" style="margin-top: 20px; margin-bottom: 50px;">Даруємо Пепероні при замовленні від 800 гривень!</h2>
-    </div>
-    <h2 align="center" style="margin-bottom: 10px;">ПІЦИ</h2>
-    <table align="center" style="border-spacing: 20px; margin-top: 10px;">
-        <tr>
-            <td style="padding: 30px; text-align: center;">
+    <header style="background-color: #333333; padding: 20px">
+        <a href="#about" style="color: white; padding: 10px;">ПРО НАС</a>
+        <a href="#contacts" style="color: white; padding: 10px;">КОНТАКТИ</a>
+        <a href="#delivery" style="color: white; padding: 10px;">ДОСТАВКА ТА ОПЛАТА</a>
+        <a href="#rates" style="color: white; padding: 10px;">ВІДГУКИ</a>
+        <a href="#news" style="color: white; padding: 10px;">НОВИНИ ТА АКЦІЇ</a>
+        <a href="#login" style="color: white; padding: 10px;">УВІЙТИ</a>
+    </header>
+    <main>
+        <div style="text-align: center;">
+            <img src="images/2.jpg" style="margin-top: 50px;" width="500px" height="auto" alt="Акція">
+            <h3 align="center" style="margin-top: 20px; margin-bottom: 50px;">Даруємо Пепероні при замовленні від 800 гривень!</h2>
+        </div>
+        <section class="pizza-container">
+            <div class="pizza-item">
                 <h3>Маргарита</h3>
-                <img src="images/Маргарита.jpg" width="400px" height="266px" alt="Маргарита">
+                <img src="images/Маргарита.jpg" alt="Маргарита">
                 <br>
                 <button>Стандартна</button>
                 <button>Велика</button>
                 <button>Величезна</button>
                 <br>
                 <p>299 ₴ <button>В кошик</button></p>
-            </td>
-            <td style="padding: 30px; text-align: center;">
+            </div>
+            <div class="pizza-item">
                 <h3>Пепероні</h3>
-                <img src="images/Пеперони.jpg" width="400px" height="266px" alt="Пепероні">
+                <img src="images/Пеперони.jpg" alt="Пепероні">
                 <br>
                 <button>Стандартна</button>
                 <button>Велика</button>
                 <button>Величезна</button>
                 <br>
                 <p>349 ₴ <button>В кошик</button></p>
-            </td>
-            <td style="padding: 30px; text-align: center;">
+            </div>
+            <div class="pizza-item">
                 <h3>Чотири сири</h3>
-                <img src="images/4 сири.png" width="400px" height="266px" alt="Чотири сира">
+                <img src="images/4 сири.png" alt="Чотири сира">
                 <br>
                 <button>Стандартна</button>
                 <button>Велика</button>
                 <button>Величезна</button>
                 <br>
                 <p>329 ₴ <button>В кошик</button></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 30px; text-align: center;">
+            </div>
+            <div class="pizza-item">
                 <h3>Селянська</h3>
-                <img src="images/Селянська.jpg" width="400px" height="266px" alt="Селянська">
+                <img src="images/Селянська.jpg" alt="Селянська">
                 <br>
                 <button>Стандартна</button>
                 <button>Велика</button>
                 <button>Величезна</button>
                 <br>
                 <p>349 ₴ <button>В кошик</button></p>
-            </td>
-            <td style="padding: 30px; text-align: center;">
+            </div>
+            <div class="pizza-item">
                 <h3>Баварська</h3>
-                <img src="images/Баварська.jpg" width="400px" height="266px" alt="Баварська">
+                <img src="images/Баварська.jpg" alt="Баварська">
                 <br>
                 <button>Стандартна</button>
                 <button>Велика</button>
                 <button>Величезна</button>
                 <br>
                 <p>349 ₴ <button>В кошик</button></p>
-            </td>
-            <td style="padding: 30px; text-align: center;">
+            </div>
+            <div class="pizza-item">
                 <h3>Чотири м'яса</h3>
-                <img src="images/4 м'яса.jpg" width="400px" height="266px" alt="Чотири м'яса">
+                <img src="images/4 м'яса.jpg" alt="Чотири м'яса">
                 <br>
                 <button>Стандартна</button>
                 <button>Велика</button>
                 <button>Величезна</button>
                 <br>
                 <p>329 ₴ <button>В кошик</button></p>
-            </td>
-        </tr>
-    </table>
-</main>
-<footer style="background-color: #333333;  padding: 20px">
-    <p align="center", style="color:white"> Київ 2024 </p>
-</footer>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p> Київ 2024 </p>
+    </footer>
 </body>
 </html>
-
