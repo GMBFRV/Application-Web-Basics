@@ -1,4 +1,4 @@
-body {
+  body {
     font-family: 'Merriweather', serif;
     margin: 0;
 }
@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .promotion {
@@ -37,6 +38,8 @@ body {
     .promotion h3 {
         margin-top: 20px;
         margin-bottom: 50px;
+        background-color: white;
+        border: 10 px solid black;
     }
 
 .pizza-container {
@@ -48,7 +51,7 @@ body {
 
 .pizza-item {
     flex: 0 0 30%;
-    margin: 20px;
+    margin: 40px;
     text-align: center;
 }
 
@@ -77,3 +80,74 @@ body {
     text-align: center;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .header,
+    .footer{
+        width: 100%;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .nav-link {
+        color: white;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+
+    .promotion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promotion img {
+        margin-top: 50px;
+        width: 80%;
+        height: auto;
+    }
+
+    .promotion h3 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 12px;
+    }
+
+    .pizza-item {
+        flex: 1 0 70%;
+        margin: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+        .pizza-item img {
+            width: 70%;
+            height: auto;
+        }
+    
+        .pizza-item h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+  }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header,
+    .footer{
+        width: 100%;
+    }
+
+
+    .pizza-options button{
+        font-size: 18px; 
+        padding: 40px; 
+        margin: 10px; 
+        height: 40px;
+    }
+    }
