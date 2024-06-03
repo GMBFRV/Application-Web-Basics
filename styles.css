@@ -1,11 +1,12 @@
-  body {
+body {
     font-family: 'Merriweather', serif;
-    margin: 0;
+    background-color: antiquewhite;
+    margin:0px;
 }
 
-.header {
+header {
     background-color: #333333;
-    padding: 20px;
+    width: 100%;
 }
 
 .nav {
@@ -23,23 +24,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
-.promotion {
+#promotion {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
-    .promotion img {
+#promotion img {
         margin-top: 50px;
-        width: 500px;
-        height: auto;
+        width: 50%;
     }
 
-    .promotion h3 {
-        margin-top: 20px;
-        margin-bottom: 50px;
-        background-color: white;
-        border: 10 px solid black;
+#promotion h3 {
+    margin-top: 20px;
+    margin-bottom: 50px;
     }
 
 .pizza-container {
@@ -55,34 +59,37 @@
     text-align: center;
 }
 
-    .pizza-item img {
-        width: 500px;
-        height: 320px;
-    }
+.pizza-item img {
+    width: 100%;
+    height: 70%;
+}
 
-    .pizza-item h3 {
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
+.pizza-item h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 
 .pizza-options {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-    .pizza-options button {
-        margin: 5px;
-    }
+.pizza-options button {
+    margin: 5px;
+    width: 30%;
+}
 
 .footer {
     background-color: #333333;
-    padding: 20px;
     text-align: center;
     color: white;
+    width: 100%;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
-    .header,
+    header,
     .footer{
         width: 100%;
     }
@@ -100,20 +107,20 @@
     }
 
 
-    .promotion {
+    #promotion {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .promotion img {
+    #promotion img {
         margin-top: 50px;
         width: 80%;
         height: auto;
     }
 
-    .promotion h3 {
+    #promotion h3 {
         margin-top: 20px;
         margin-bottom: 50px;
         font-size: 12px;
@@ -126,28 +133,51 @@
         justify-content: center;
     }
     
-        .pizza-item img {
-            width: 70%;
-            height: auto;
-        }
+    .pizza-item img {
+        width: 70%;
+        height: auto;
+    }
     
-        .pizza-item h3 {
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
+    .pizza-item h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .pizza-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pizza-options button{
+        width: 30%;
+    }
   }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .header,
+@media (min-width: 768px) and (max-width: 1200px) {
+    header,
     .footer{
         width: 100%;
     }
 
+    .pizza-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pizza-item {
+        flex: 0 0 40%;
+        margin: 40px;
+        text-align: center;
+    }
 
     .pizza-options button{
-        font-size: 18px; 
-        padding: 40px; 
-        margin: 10px; 
-        height: 40px;
+        width: 30%;
     }
+
+
     }
